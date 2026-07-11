@@ -1,0 +1,15 @@
+Write a Program to find the power of a number recursively. Take two inputs, number and the power.
+
+Example:
+Input: 2 3
+
+n=int(input("n="))
+m=int(input("m="))
+
+soln:
+
+def power(n,m):
+    if m==0:
+        return 1
+    return n* power(n,m-1)
+print(power(n,m))        
