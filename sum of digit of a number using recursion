@@ -1,0 +1,13 @@
+n=int(input("n="))
+
+def countn(n):
+    if n%10==n:
+        return n
+    c=0        
+    while(n>1):
+        c=n%10
+        if c!=0:
+            return c+countn(n//10)   
+        
+print (countn(n))   
+
