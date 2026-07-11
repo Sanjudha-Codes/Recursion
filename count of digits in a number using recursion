@@ -1,3 +1,17 @@
+Using recurion:
+
+n=int(input("n="))
+
+def countn(n):
+    if n==0:
+        return 
+    return n%10 + countn(n//10)
+        
+print (countn(n)) 
+
+
+Non-recursion:
+
 n=int(input("n="))
 
 def countn(n):
