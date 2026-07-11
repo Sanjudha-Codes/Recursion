@@ -1,0 +1,11 @@
+
+n=int(input("n="))
+
+def div(n, flag=1):
+    if flag>n:
+        return
+    if n % flag ==0:
+        print(flag, end=" ") 
+        
+    div(n,flag+1)    
+div(n)
